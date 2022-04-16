@@ -1,0 +1,74 @@
+.maincontainer{
+    padding: 20px;
+    max-width: 1200;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .imageDiv{
+        padding-top: 120px;
+        width: 600px;
+        height: 500px;
+        padding: 20px;
+    }
+    .announcement{
+        padding-top: 200px;
+        width: 300px;
+        height: 300px;
+        color: #fff;
+        padding: 20px;
+    }
+    .glow {
+        
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
+}
+
+
+@media (max-width: 600px) {
+    .maincontainer{
+        .imageDiv{
+            padding-top: 50px;
+            width: 600px;
+            height: 500px;
+        }
+        .announcement{
+            padding-top: 70px;
+            width: 300px;
+            height: 300px;
+            color: #fff;
+        }
+    }
+  }
+  @media (max-width: 768px) {
+    .maincontainer{
+    
+        .imageDiv{
+            padding-top: 50px;
+            width: 600px;
+            height: 500px;
+        }
+        .announcement{
+            padding-top: 70px;
+            width: 300px;
+            height: 300px;
+            color: #fff;
+        }
+    }
+  }
